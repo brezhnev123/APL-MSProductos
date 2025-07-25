@@ -15,7 +15,8 @@ import static org.springframework.http.HttpStatus.*;
 import static org.springframework.http.ResponseEntity.*;
 
 @RestController
-@RequestMapping("/api/v1/productos")
+//@RequestMapping("/api/v1/productos")
+@RequestMapping(value = "${controller.properties.base-path}")
 public class ProductoController {
 
     private final ProductoService service;
